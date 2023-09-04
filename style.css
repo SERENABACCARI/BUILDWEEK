@@ -1,0 +1,33 @@
+.navbar-brand img {
+    height: 40px;
+}
+
+.bi-globe {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item .btn-light {
+    border-radius: 50px;
+}
+
+button img {
+    height: 30px;
+}
+
+.hero {
+    background-image: url("assets/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+}
