@@ -18,7 +18,7 @@ button img {
     height: 30px;
 }
 
-.nav-item button:hover {
+.profile button:hover {
     box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
 }
 
