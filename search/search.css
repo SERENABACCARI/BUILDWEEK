@@ -1,0 +1,18 @@
+.card{
+    border: transparent;
+    
+    
+}
+
+img{
+    border-radius: 10%;
+    transform: scale(1);
+    transition: all .2s linear;
+}
+
+img:hover{
+    transform: scale(1.1);
+        border: 20px solid transparent
+    }
+
+
