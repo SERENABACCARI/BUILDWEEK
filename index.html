@@ -81,9 +81,42 @@
   </nav>
 
   <!-- ----------Search bar -->
+  <div id="searchBar" class="container">
+    <form class="row justify-content-end">
+      <div class="col-12 col-md-3 form-label">
+        <label for="inputLocation" class="form-label fw-bold">Location</label>
+        <input type="text" class="form-control" id="inputLocation" placeholder="Where are you going?">
+      </div>
+      <div class="col-12 col-md-2 form-label">
+        <label for="inputCheckIn" class="form-label fw-bold">Check In</label>
 
-  <div id="search" class="container d-flex justify-content-center px-4 py-2">
-    <div class="row">
+        <input type="date" class="date form-control " id="inputCheckIn">
+      </div>
+      <div class="col-12 col-md-2 form-label">
+        <label for="inputCheckIn" class="form-label fw-bold">Check Out</label>
+
+        <input type="date" class="date form-control " id="inputCheckIn">
+      </div>
+      <div class="col-12 col-md-2 form-label ">
+        <label for="inputGuests" class="form-label fw-bold">Guests</label>
+        <select id="inputRating" class="form-select">
+          <option selected>Add Guests</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+
+
+        </select>
+      </div>
+      <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+
+        <button type="submit" class=" border-0"><i class="bi bi-search"></i></button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- <div class="row" id="search">
 
       <div class="col-12 col-md-3">
         <p>Location</p>
@@ -105,8 +138,7 @@
 
         <button type="submit" class=" border-0"><i class="bi bi-search"></i></button>
       </div>
-    </div>
-  </div>
+    </div> -->
   <section class="hero d-flex flex-column">
     <img class="img-fluid" src="assets/home.jpg" alt="">
 
