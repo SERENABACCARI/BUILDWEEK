@@ -1,0 +1,45 @@
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-item .btn-light {
+    border-radius: 50px;
+}
+
+button img {
+    height: 30px;
+}
+
+.profile button:hover {
+    box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
+}
+
+
+/* "HERO" */
+
+.bi-box-arrow-up{
+    color: rgba(0, 0, 0, 0.623);
+    cursor: pointer;
+}
+
+.bi-box-arrow-up:hover {
+    color: black;
+}
+
+
+.bi-heart-fill{
+    cursor: pointer;
+    color: transparent;
+    stroke: black;
+    stroke-width: 1;
+    
+}
+
+.bi-heart-fill:hover {
+    color: red;
+    stroke: red;
+}
+
+.photos img{
+    cursor: pointer;
+}
