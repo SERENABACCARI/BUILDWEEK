@@ -38,11 +38,11 @@ h1 {
 
 .container-fluid button {
     margin-left: 50px;
-    margin-bottom: 230px;
+    margin-bottom: 200px;
 }
 
 .hero img {
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     position: absolute;
     object-fit: cover;
