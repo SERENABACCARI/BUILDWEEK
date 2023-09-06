@@ -43,3 +43,19 @@ button img {
 .photos img{
     cursor: pointer;
 }
+
+/* RECENSIONI */
+
+.reviews p {
+    color: gray;
+}
+
+/* FOOTER */
+
+footer p:first-of-type {
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
+}
