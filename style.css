@@ -2,7 +2,7 @@
     height: 40px;
 }
 
-.bi-globe {
+.navbar .bi-globe {
     color: white;
 }
 
@@ -93,4 +93,8 @@ h1 {
 
 footer p:first-of-type {
     font-weight: bold;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
 }
