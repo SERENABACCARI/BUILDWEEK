@@ -1,0 +1,285 @@
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-item .btn-light {
+    border-radius: 50px;
+}
+
+button img {
+    height: 30px;
+}
+
+.profile button:hover {
+    box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
+}
+
+
+/* "HERO" */
+
+.bi-box-arrow-up{
+    color: rgba(0, 0, 0, 0.623);
+    cursor: pointer;
+}
+
+.bi-box-arrow-up:hover {
+    color: black;
+}
+
+
+.bi-heart-fill{
+    cursor: pointer;
+    color: transparent;
+    stroke: black;
+    stroke-width: 1;
+    
+}
+
+.bi-heart-fill:hover {
+    color: red;
+    stroke: red;
+}
+
+.photos img{
+    cursor: pointer;
+}
+
+.photos .row img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* RECENSIONI */
+
+.reviews p {
+    color: gray;
+}
+
+/* FOOTER */
+
+footer p:first-of-type {
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
+}
+
+
+
+
+
+/* CONTENT */
+
+
+
+/* HEADER e subtitles */
+.list-group>.list-group-item>div:nth-child(2)>p {
+    font-size: 0.9rem;
+}
+
+
+/* List group */
+
+
+/* icon style */
+.icon-list {
+    width: 6.333333%;
+
+}
+
+.icon-list>i::before {
+    font-size: 1.8rem;
+}
+
+
+/* Availability section -CARD */
+
+/* Margine titolo e reviews card */
+.header-card {
+    margin-block: 1rem;
+
+}
+
+.card {
+    box-shadow: 4px 5px 22px -7px #5D5D5D;
+    border-radius: 24px;
+}
+
+.card-title {
+    font-weight: 300;
+}
+
+/* colore icona */
+.card-body>.row>div:nth-child(2)>i {
+    color: rgb(255, 56, 91);
+}
+
+/* input data sinistra */
+.card-body>.row>div:nth-child(3)>input {
+    border-radius: 25px 25px 0 0;
+
+}
+
+/* input data destro */
+.card-body>.row>div:nth-child(4)>input {
+    border-radius: 0 0 0 0;
+}
+
+/* input guests */
+.card-body>.row>div:nth-child(5)>input {
+    border-radius: 0 0 25px 25px;
+    border-top-style: none;
+
+
+}
+
+/* griglia del form availability check */
+
+.check.form-control {
+    border: 0.5px solid black;
+    /* padding-inline: 6rem; */
+}
+
+input {
+    cursor: pointer;
+}
+
+/* bottone prenotazione */
+
+.card-body>.row>div:last-child>button {
+    padding-inline: 6.2rem;
+    padding-block: 1rem;
+    border-radius: 19px;
+    background-color: rgb(255, 56, 91);
+}
+
+
+
+/*------------- FORM  */
+
+.container > form{
+    font-weight: 300;
+}
+
+
+/*------------------ MEDIA QUERY */
+
+/* for big screen */
+@media only screen and (min-width: 1000px) {
+
+    /* bottone prenotazione */
+    .card-body>.row>div:last-child>button {
+        padding-inline: 9.1rem;
+
+    }
+}
+
+/* --------------For Desktop */
+@media only screen and (min-width: 768px) {
+
+
+    /* distanza tra icone e testo nella lista di sinistra */
+    .icon-list {
+        width: 7.333333%;
+    }
+
+    /* input data sinistra */
+
+    .card-body>.row>div:nth-child(3) {
+
+        padding-inline-end: 0;
+    }
+
+    /* input data sinistra */
+
+    .card-body>.row>div:nth-child(3)>input {
+        border-radius: 25px 0 0 0;
+        border-inline-end-style: none;
+    }
+
+
+    /* input data sinistra */
+
+    .card-body>.row>div:nth-child(4) {
+
+        padding-inline-start: 0;
+    }
+
+    .card-body>.row>div:nth-child(4)>input {
+        border-radius: 0 25px 0 0;
+
+    }
+
+
+
+
+    /* bottone prenotazione */
+    .card-body>.row>div:last-child>button {
+        padding-inline: 9.1rem;
+
+    }
+
+
+
+}
+
+
+/*-------------- For tablets: */
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+
+    /* bottone prenotazione */
+    .card-body>.row>div:last-child>button {
+        padding-inline: 8rem;
+
+    }
+
+    /* distanza tra icone e testo nella lista di sinistra */
+    .icon-list {
+        width: 12.333333%;
+
+    }
+
+
+}
+
+/*--------------- Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (min-width:375px) {
+
+    /* bottone prenotazione */
+    .card-body>.row>div:last-child>button {
+        padding-inline: 6rem;
+
+    }
+
+    /* distanza tra icone e testo nella lista di sinistra */
+
+    .icon-list {
+        width: 10.333333%;
+    }
+
+}
+
+/*--------- fold mobile devices */
+@media only screen and (max-width: 350px) {
+
+    /* bottone prenotazione */
+
+    .card-body>.row>div:last-child>button {
+        padding-inline: 6rem;
+
+    }
+
+    /* distanza tra icone e testo nella lista di sinistra */
+
+    .icon-list {
+        width: 14.333333%;
+    }
+
+
+
+}
+
+
