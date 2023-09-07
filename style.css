@@ -50,6 +50,10 @@ h1 {
     z-index: -1;
 }
 
+.hero {
+    height: 800px;
+}
+
 #navbarSupportedContent {
     margin-left: 20vw;
 }
