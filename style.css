@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .navbar-brand img {
     height: 40px;
 }
@@ -107,7 +111,6 @@ footer {
 
 /*----------- SEARCH BAR */
 #searchBar{
-    background-color: black;
     max-width: 90rem;
 }
 
