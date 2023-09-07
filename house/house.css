@@ -51,6 +51,9 @@ button img {
     object-fit: cover;
 }
 
+
+
+
 /* RECENSIONI */
 
 .reviews p {
@@ -68,11 +71,7 @@ footer {
 }
 
 
-
-
-
 /* CONTENT */
-
 
 
 /* HEADER e subtitles */
@@ -253,6 +252,23 @@ input {
 
 }
 
+/* "Arrotodamento" immagini di house.html dalla dimensione "tablet" in poi */
+@media (min-width: 768px){ 
+    .photo-1{
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    .photo-3{
+        border-radius: 0 2rem 0 0;
+    }
+
+    .photo-5{
+        border-radius: 0 0 2rem 0;
+    }
+}
+
+
+
 
 /*-------------- For tablets: */
 @media only screen and (min-width: 650px) and (max-width: 1200px) {
@@ -288,6 +304,14 @@ input {
     }
 
 }
+
+/* "Arrotodamento" immagini di house.html per mobile */
+@media (max-width: 767px){
+    .photo-1, .photo-2, .photo-3, .photo-4, .photo-5{
+        border-radius: 2rem;
+    }
+}
+
 
 /*--------- fold mobile devices */
 @media only screen and (max-width: 350px) {
