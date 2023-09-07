@@ -1,3 +1,46 @@
+/* NAVBAR */
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-item .btn-light {
+    border-radius: 50px;
+}
+
+button img {
+    height: 30px;
+}
+
+.profile button:hover {
+    box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
+}
+
+
+/* CARD */
+
+.card-body > .card-text > .row > div> i{
+    color: #FF385B;
+}
+.card > .card-body > .card-text > .row > div:nth-child(2){
+    flex: 0 0 1.1rem;
+
+}
+p{
+    margin-block: 0;
+    font-weight: 300;
+}
+
+.card-text > .row{
+    font-size: 15px;
+}
+.card-text > div:nth-child(2) > div{
+    font-size: 16px;
+}
+
+
+
+
 
 .myButton {
     color: rgb(12, 12, 12);
@@ -5,7 +48,7 @@
     line-height: 16px;
     padding: 4px;
     border-radius: 40px;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
     font-weight: normal;
     text-decoration: none;
     font-style: normal;
@@ -73,4 +116,16 @@
     border: 1px solid #6f6c6c;
     
 }
+
+
+/* FOOTER */
+
+footer p:first-of-type {
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
+}
+
 

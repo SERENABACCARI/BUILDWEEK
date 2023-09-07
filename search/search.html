@@ -4,190 +4,520 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Blarmor home</title>
+  <link rel="icon" href="../assets/airbnb-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="search.css">
 </head>
 
 <body>
 
-
-  <nav class="navbar bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/logo-pink.png" alt="" width="90" height="50">
-      </a>
-      <p>Become a host</p>
-      <button class="btn-toolset"><img src="../assets/omino.png" alt=""></button>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-body">
+    <div class="d-flex w-100 mx-5 px-5 justify-content-between">
+      <div>
+        <a class="navbar-brand" href="../index.html"><img src="../assets/logo-pink.png" alt=""></a>
+      </div>
+      <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-lg-row align-items-lg-center align-items-end">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Become a host</a>
+          </li>
+          <li class="nav-item me-4">
+            <div class="dropdown">
+              <button class="btn d-flex align-items-center justify-content-between border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown profile">
+              <button class="btn btn-light d-flex align-items-center justify-content-between border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-list me-2"></i>
+                <img src="../assets/propic.png" alt="">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+                <li><a class="dropdown-item" href="#">Log in</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="#">Airbnb your home</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
 
-
+  <!-- HERO -->
   <!--contenitore 1-->
-  <div class="container ">
-    <p style="margin-top: 5rem;">10 Stays</p>
-    <div style="display: flex;">
-      <h1 style="font-weight: bold;">Stays in Genova</h1>
-      <!--<h3 class="red"></h3>-->
-      <img class="pallino" src="../assets/pallino.png">
+  <div class="container my-5 ">
+    <div class="row">
+      <div class="col">
+        <p>10 Stays</p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-5 d-flex">
+
+        <h1 class="fw-bold">Stays in Genova</h1>
+      </div>
+      <div class="col-7 d-flex">
+        <img class="pallino" src="../assets/pallino.png">
+
+      </div>
     </div>
 
+    <div class="row flex-column flex-md-row">
 
-    <div class="myButton">Available houses</div>
-    <div class="myButton">Booked houses</div>
-    <div class="myButton">All houses</div>
 
-    <p style="margin-top: 2rem;">Enter dates and number of guest to see the total price per night</p>
-    <p style="margin-top: 3rem;">Reviw COVID-19 travel restriction before your book.<a href="">Learn more</a></p>
+      <div class="col myButton">Available houses</div>
+      <div class="col myButton">Booked houses</div>
+      <div class="col myButton">All houses</div>
+    </div>
+    <div class="row flex-column">
+
+      <div class="col mt-5">
+        <p>Enter dates and number of guest to see the total price per night</p>
+
+      </div>
+      <div class="col mt-2">
+        <p>Reviw COVID-19 travel restriction before your book.<a href="">Learn more</a></p>
+
+      </div>
+    </div>
   </div>
 
   <!--contenitore card 1-->
+  <div class="container">
 
-  <div class="row d-flex" style="justify-content: center;">
-    <div class="col-12 col-lg-2   ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova6.jpg" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2.75.4 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-2  ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova2.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-2  ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova3.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-2  ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova4.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
-        </div>
 
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-2   ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova6.jpg" alt="posto1">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-lg-2   ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova5.jpeg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
+      <div class="col-12 col-lg-2  ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-2  ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova3.jpg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-2  ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova4.jpg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-2   ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova5.jpeg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-
   <!--contenitore card 2-->
+  <div class="container">
 
-  <div class="row d-flex" style="justify-content: center;">
-    <div class="col-12 col-lg-2   ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova 1.jpg" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2.75.4 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
+    <div class="row d-flex" style="justify-content: center;">
+      <div class="col-12 col-lg-2   ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova 1.jpg" alt="place">
+          <div class="card-body">
+            <p class="card-text">
+              <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2.75.4 ratings
+            </p>
+            <p>Apartament.Genova</p>
+            <p>The windy house </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-lg-2   ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova5.jpeg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-2 ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova6.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-2  ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova3.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
-        </div>
+      <div class="col-12 col-lg-2   ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova5.jpeg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
 
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-lg-2   ">
-      <div class="card">
-        <img class="imgcard" src="../assets/genova4.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
-        <div class="card-body">
-          <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
-          </p>
-          <p>Apartament.Genova</p>
-          <p>The windy house </p>
-          </p>
+      <div class="col-12 col-lg-2 ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova6.jpg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-2  ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova3.jpg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-2   ">
+        <div class="card mb-md-5 pb-md-5">
+           <img class="imgcard" src="../assets/genova4.jpg" class="card-img-top" alt="place">
+          <div class="card-body">
+            <div class="card-text">
+              <div class="row mb-md-1">
+
+                <div class="col-1 col-md-2 p-0">
+                  <i class="bi bi-star-fill"></i>
+
+                </div>
+                <div class="col-2 col-md-3 fw-bold p-0">
+
+                  <p>
+                    2.75
+
+                  </p>
+                </div>
+                <div class="col-8 col-md-7 d-flex p-0 ms-1">
+                  <p class="d-flex align-items-center">· 4 ratings</p>
+                </div>
+              </div>
+              <div class="row flex-column">
+
+                <div class="col p-0">
+                  <p>Apartment · Genova</p>
+                </div>
+                <div class="col p-0">
+                  <p>The windy house </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
+
+  <!-- FOOTER -->
   <footer>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Support</p>
+          <p>Help Center</p>
+          <p>AirCover</p>
+          <p>Anti-discrimination</p>
+          <p>Disability support</p>
+          <p>Cancellation options</p>
+          <p>Report neighborhood concern</p>
+        </div>
+        <hr class="col-12 d-md-none">
 
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Hosting</p>
+          <p>Airbnb your home</p>
+          <p>AirCover for Hosts</p>
+          <p>Hosting resources</p>
+          <p>Community forum</p>
+          <p>Hosting responsibly</p>
+          <p>Airbnb-friendly apartments</p>
+        </div>
+        <hr class="col-12 d-md-none">
 
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Airbnb</p>
+          <p>Newsroom</p>
+          <p>New features</p>
+          <p>Careers</p>
+          <p>Investors</p>
+          <p>Gift cards</p>
+          <p>Airbnb.org emergency stays</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 text-muted my-3">
+          <span>© 2023 Airbnb, Inc. •</span>
+          <span>Terms •</span>
+          <span>Sitemap •</span>
+          <span>Privacy •</span>
+          <span>Your Privacy Choices</span>
+        </div>
+
+        <div class="col-12 col-lg-6 my-3 d-flex justify-content-center justify-content-lg-end">
+          <i class="bi bi-globe me-2"></i>
+          <span class="me-3">English (US)</span>
+          <span class="me-3">€ EUR</span>
+          <i class="bi bi-facebook me-2"></i>
+          <i class="bi bi-twitter me-2"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
 
   </footer>
 
