@@ -1,0 +1,27 @@
+/* ----------CARD */
+
+.card > .imgcard{
+    border-radius: 5%;
+}
+
+.card-body > .card-text > .row > div> i{
+    color: #FF385B;
+}
+.card > .card-body > .card-text > .row > div:nth-child(2){
+    flex: 0 0 1.1rem;
+
+}
+p{
+    margin-block: 0;
+}
+
+
+
+
+
+
+
+
+/*-------- MEDIA QUERY */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
