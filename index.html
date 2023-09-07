@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airbnb</title>
-    <link rel="icon" href="assets/airbnb-logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airbnb</title>
+  <link rel="icon" href="assets/airbnb-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
   <body>
     
@@ -68,43 +70,82 @@
        </div>
     </nav>
 
-    <section class="hero d-flex flex-column">
-      <div class="background">
-        <img class="img-fluid" src="assets/home.jpg" alt="">
-      </div>
+  <!-- ----------Search bar -->
+  <div id="searchBar" class="container d-flex justify-content-center mt-4 mt-md-0">
+    <form class="row d-flex flex-row-reverse flex-md-row justify-content-center align-items-center">
 
-      <div id="search" class="d-flex align-items-center align-self-center flex-wrap px-4 py-2">
-        <div>
-          <p>Location</p>
-          <input type="text" placeholder="Where are you going?" class="border-0">
-        </div>
-        <div>
-          <p>Check-in</p>
-          <input type="date" class="border-0 me-3">
-        </div>
-        <div>
-          <p>Check-out</p>
-          <input type="date" class="border-0 me-3">
-        </div>
-        <div>
-          <p>Guests</p>
-          <input type="number" placeholder="Add guests" class="border-0">
-        </div>
+      <div class="col-8 col-md-4 form-label ms-md-0 mb-md-0 me-md-2 ps-0 ps-md-2">
+        <label for="inputLocation" class="form-label fw-bold m-0">Location</label>
+        <input type="text" class="form-control border border-0 p-md-0 text-secondary ps-0" id="inputLocation" placeholder="Where are you going?">
+      </div>
+      <div class="col-md-2 form-label d-none d-md-block p-md-0 m-md-0 me-md-2">
+        <label for="inputCheckIn" class="form-label fw-bold m-md-0">Check In</label>
+
+        <input type="date" class="date form-control border border-0 p-md-0 text-secondary " id="inputCheckIn">
+      </div>
+      <div class="col-md-2 form-label d-none d-md-block p-md-0 m-md-0 me-md-2">
+        <label for="inputCheckIn" class="form-label fw-bold m-md-0">Check Out</label>
+
+        <input type="date" class="date form-control border border-0 p-md-0 text-secondary " id="inputCheckIn">
+      </div>
+      <div class="col-md-2 form-label d-none d-md-block p-md-0 m-md-0 me-md-4">
+        <label for="inputGuests" class="form-label fw-bold m-md-0">Guests</label>
+        <select id="inputRating" class="form-select border border-0 p-md-0 text-secondary">
+          <option selected>Add Guests</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+
+
+        </select>
+      </div>
+      <div class="col-3 col-md-1 d-flex align-ite-0-center justify-content-center px-0 ps-md-3">
+
         <button type="submit" class=" border-0"><i class="bi bi-search"></i></button>
       </div>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3 d-flex flex-column">
-            <h1>Go Near</h1>
-          </div>
-        </div>
-        <button class="btn btn-light border-0" type="submit">
-          Explore nearby stays
-        </button>
-      </div>
+    </form>
+  </div>
 
-    </section>
+  <!-- <div class="row" id="search">
+
+      <div class="col-12 col-md-3">
+        <p>Location</p>
+        <input type="text" placeholder="Where are you going?" class="border-0">
+      </div>
+      <div class="col-12 col-md-3">
+        <p>Check-in</p>
+        <input type="date" class="border-0 me-3">
+      </div>
+      <div class="col-12 col-md-3">
+        <p>Check-out</p>
+        <input type="date" class="border-0 me-3">
+      </div>
+      <div class="col-12 col-md-2">
+        <p>Guests</p>
+        <input type="number" placeholder="Add guests" class="border-0">
+      </div>
+      <div class="col-12 col-md-1">
+
+        <button type="submit" class=" border-0"><i class="bi bi-search"></i></button>
+      </div>
+    </div> -->
+  <section class="hero d-flex flex-column">
+    <img class="img-fluid" src="assets/home.jpg" alt="">
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 d-flex flex-column">
+          <h1>Go Near</h1>
+        </div>
+      </div>
+      <button class="btn btn-light border-0" type="submit">
+        Explore nearby stays
+      </button>
+    </div>
+
+  </section>
 
     <section id="places">
       <div class="container">
@@ -169,70 +210,73 @@
       </div>      
     </section>
 
-    <footer>
-      <hr>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4 text-muted">
-            <p>Support</p>
-            <p>Help Center</p>
-            <p>AirCover</p>
-            <p>Anti-discrimination</p>
-            <p>Disability support</p>
-            <p>Cancellation options</p>
-            <p>Report neighborhood concern</p>            
-          </div>
-          <hr class="col-12 d-md-none">
+  <footer>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Support</p>
+          <p>Help Center</p>
+          <p>AirCover</p>
+          <p>Anti-discrimination</p>
+          <p>Disability support</p>
+          <p>Cancellation options</p>
+          <p>Report neighborhood concern</p>
+        </div>
+        <hr class="col-12 d-md-none">
 
-          <div class="col-12 col-lg-4 text-muted">
-            <p>Hosting</p>
-            <p>Airbnb your home</p>
-            <p>AirCover for Hosts</p>
-            <p>Hosting resources</p>
-            <p>Community forum</p>
-            <p>Hosting responsibly</p>
-            <p>Airbnb-friendly apartments</p>
-          </div>
-          <hr class="col-12 d-md-none">
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Hosting</p>
+          <p>Airbnb your home</p>
+          <p>AirCover for Hosts</p>
+          <p>Hosting resources</p>
+          <p>Community forum</p>
+          <p>Hosting responsibly</p>
+          <p>Airbnb-friendly apartments</p>
+        </div>
+        <hr class="col-12 d-md-none">
 
-          <div class="col-12 col-lg-4 text-muted">
-            <p>Airbnb</p>
-            <p>Newsroom</p>
-            <p>New features</p>
-            <p>Careers</p>
-            <p>Investors</p>
-            <p>Gift cards</p>
-            <p>Airbnb.org emergency stays</p>
-          </div>
-          <hr>
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Airbnb</p>
+          <p>Newsroom</p>
+          <p>New features</p>
+          <p>Careers</p>
+          <p>Investors</p>
+          <p>Gift cards</p>
+          <p>Airbnb.org emergency stays</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 text-muted my-3">
+          <span>© 2023 Airbnb, Inc. •</span>
+          <span>Terms •</span>
+          <span>Sitemap •</span>
+          <span>Privacy •</span>
+          <span>Your Privacy Choices</span>
+        </div>
+
+        <div class="col-12 col-lg-6 my-3 d-flex justify-content-center justify-content-lg-end">
+          <i class="bi bi-globe me-2"></i>
+          <span class="me-3">English (US)</span>
+          <span class="me-3">€ EUR</span>
+          <i class="bi bi-facebook me-2"></i>
+          <i class="bi bi-twitter me-2"></i>
+          <i class="bi bi-instagram"></i>
         </div>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 text-muted my-3">
-            <span>© 2023 Airbnb, Inc. •</span>
-            <span>Terms •</span>
-            <span>Sitemap •</span>
-            <span>Privacy •</span>
-            <span>Your Privacy Choices</span>
-          </div>
+  </footer>
 
-          <div class="col-12 col-lg-6 my-3 d-flex justify-content-center justify-content-lg-end">
-            <i class="bi bi-globe me-2"></i>
-            <span class="me-3">English (US)</span>
-            <span class="me-3">€ EUR</span>
-            <i class="bi bi-facebook me-2"></i>
-            <i class="bi bi-twitter me-2"></i>
-            <i class="bi bi-instagram"></i>
-          </div>
-        </div>
-      </div>
 
-    </footer>
 
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
 </html>

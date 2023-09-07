@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .navbar-brand img {
     height: 40px;
 }
@@ -35,20 +39,28 @@ h1 {
     margin-top: 150px;    
     padding-left: 50px;
     padding-right: 50px;
+    padding-right: 50px;
 }
 
 .container-fluid button {
     margin-left: 50px;
     margin-bottom: 250px;
+    margin-bottom: 250px;
 }
 
 .hero img {
    
+   
     width: 100%;
+    height: 700px;
     height: 700px;
     position: absolute;
     object-fit: cover;
     z-index: -1;
+}
+
+.hero {
+    height: 800px;
 }
 
 .hero {
@@ -64,10 +76,7 @@ h1 {
     border-radius: 50px;
 }
 
-#search p {
-    font-weight: bold;
-    margin-bottom: 0;
-}
+
 
 #search button {
     border-radius: 50px;
@@ -75,6 +84,11 @@ h1 {
     height: 50px;
     background-color: #FF385C;
     color: white;
+}
+
+#places{
+
+    background-color: white;
 }
 
 #places img {
@@ -112,3 +126,58 @@ footer p, span {
 footer p:hover, span:hover {
     text-decoration: underline;
 }
+
+footer> hr{
+margin: 0;}
+/*----------- SEARCH BAR */
+#searchBar{
+    max-width: 90rem;
+}
+
+#searchBar > .row{
+        border-radius: 50px;
+        padding-block: 0.5rem;
+        width: 50rem;
+        background-color: white;
+}
+
+#searchBar > .row > div:nth-child(5) > button{
+        width: 45px;
+        border-radius: 50px;
+        height: 45px;
+        color: white;
+        background-color: rgb(255, 56, 91);
+    
+}
+
+/* tolgo spazio tra icone data */
+
+#searchBar > .row > div> input{
+    width: 95%;
+}
+
+
+
+/* ---------------MEDIA QUERY */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #searchBar > .row{
+        border-radius: 50px;
+        padding-block: 0.5rem;
+        width: 20rem;
+        background-color: white;
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
