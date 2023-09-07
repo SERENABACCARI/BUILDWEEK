@@ -13,37 +13,88 @@
 <body>
 
 
-  <nav class="navbar bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/logo-pink.png" alt="" width="90" height="50">
-      </a>
-      <p>Become a host</p>
-      <button class="btn-toolset"><img src="../assets/omino.png" alt=""></button>
+  <nav class="navbar navbar-expand-lg bg-white border-body">
+    <div class="container d-flex">
+      <div>
+        <a class="navbar-brand" href="../index.html"><img src="../assets/logo-pink.png" alt=""></a>
+      </div>
+      <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-lg-row align-items-lg-center align-items-end">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Become a host</a>
+          </li>
+          <li class="nav-item me-4">
+            <div class="dropdown">
+              <button class="btn d-flex align-items-center justify-content-between border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown profile">
+              <button class="btn btn-light d-flex align-items-center justify-content-between border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-list me-2"></i>
+                <img src="../assets/propic.png" alt="">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+                <li><a class="dropdown-item" href="#">Log in</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="#">Airbnb your home</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
 
 
-  <!--contenitore 1-->
-  <div class="container ">
-    <p style="margin-top: 5rem;">10 Stays</p>
-    <div style="display: flex;">
-      <h1 style="font-weight: bold;">Stays in Genova</h1>
-      <!--<h3 class="red"></h3>-->
-      <img class="pallino" src="../assets/pallino.png">
+
+  <!--stays in genova-->
+
+  <div class="container"  style="display: flex;justify-content: flex-start;margin-inline-start: 0;margin-inline-end: 0;margin-left: 7rem;">
+    
+    <div class="row">
+      <div class="col"><p style="margin-top: 5rem;">10 Stays</p>
     </div>
+    <div class="row">
 
+      <div class="col" style="display: flex;">
+        <h1 style="font-weight: bold;">Stays in Genova</h1>
+        <div class="col"><img class="pallino" src="../assets/pallino.png">
+      </div>
+      
+      </div>
+      
+    </div>
+      
+      <div class="row">
 
-    <div class="myButton">Available houses</div>
-    <div class="myButton">Booked houses</div>
-    <div class="myButton">All houses</div>
-
+        <div class="col myButton"><p>Available houses</p></div>
+        <div class="col myButton"><p>Booked houses</p></div>
+        <div class="col myButton"><p>All houses</p></div>
+      </div>
+    
     <p style="margin-top: 2rem;">Enter dates and number of guest to see the total price per night</p>
     <p style="margin-top: 3rem;">Reviw COVID-19 travel restriction before your book.<a href="">Learn more</a></p>
   </div>
+</div>
 
-  <!--contenitore card 1-->
+  <!--row card 1-->
 
   <div class="row d-flex" style="justify-content: center;">
     <div class="col-12 col-lg-2   ">
@@ -51,9 +102,9 @@
         <img class="imgcard" src="../assets/genova6.jpg" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2.75.4 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2•75•4 ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
         </div>
       </div>
@@ -63,9 +114,9 @@
         <img class="imgcard" src="../assets/genova2.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -76,9 +127,9 @@
         <img class="imgcard" src="../assets/genova3.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -89,9 +140,9 @@
         <img class="imgcard" src="../assets/genova4.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -103,9 +154,9 @@
         <img class="imgcard" src="../assets/genova5.jpeg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -114,7 +165,7 @@
   </div>
   </div>
 
-  <!--contenitore card 2-->
+  <!--row card 2-->
 
   <div class="row d-flex" style="justify-content: center;">
     <div class="col-12 col-lg-2   ">
@@ -122,9 +173,9 @@
         <img class="imgcard" src="../assets/genova 1.jpg" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2.75.4 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">2•75•4 ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
         </div>
       </div>
@@ -134,9 +185,9 @@
         <img class="imgcard" src="../assets/genova5.jpeg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -147,9 +198,9 @@
         <img class="imgcard" src="../assets/genova6.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -160,9 +211,9 @@
         <img class="imgcard" src="../assets/genova3.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -174,9 +225,9 @@
         <img class="imgcard" src="../assets/genova4.jpg" class="card-img-top" alt="..." style="border-radius: 5%;">
         <div class="card-body">
           <p class="card-text">
-            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0 ratings
+            <img src="../assets/icons8-stella-50.png" alt="" style="height:15px;width: 15px;">0•ratings
           </p>
-          <p>Apartament.Genova</p>
+          <p>Apartament•Genova</p>
           <p>The windy house </p>
           </p>
         </div>
@@ -185,11 +236,69 @@
   </div>
   </div>
 
+  <!-- FOOTER -->
   <footer>
-
-
-
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Support</p>
+          <p>Help Center</p>
+          <p>AirCover</p>
+          <p>Anti-discrimination</p>
+          <p>Disability support</p>
+          <p>Cancellation options</p>
+          <p>Report neighborhood concern</p>
+        </div>
+        <hr class="col-12 d-md-none">
+  
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Hosting</p>
+          <p>Airbnb your home</p>
+          <p>AirCover for Hosts</p>
+          <p>Hosting resources</p>
+          <p>Community forum</p>
+          <p>Hosting responsibly</p>
+          <p>Airbnb-friendly apartments</p>
+        </div>
+        <hr class="col-12 d-md-none">
+  
+        <div class="col-12 col-lg-4 text-muted">
+          <p>Airbnb</p>
+          <p>Newsroom</p>
+          <p>New features</p>
+          <p>Careers</p>
+          <p>Investors</p>
+          <p>Gift cards</p>
+          <p>Airbnb.org emergency stays</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 text-muted my-3">
+          <span>© 2023 Airbnb, Inc. •</span>
+          <span>Terms •</span>
+          <span>Sitemap •</span>
+          <span>Privacy •</span>
+          <span>Your Privacy Choices</span>
+        </div>
+  
+        <div class="col-12 col-lg-6 my-3 d-flex justify-content-center justify-content-lg-end">
+          <i class="bi bi-globe me-2"></i>
+          <span class="me-3">English (US)</span>
+          <span class="me-3">€ EUR</span>
+          <i class="bi bi-facebook me-2"></i>
+          <i class="bi bi-twitter me-2"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+  
   </footer>
+
 
 
 
