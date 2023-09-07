@@ -34,23 +34,75 @@ h1 {
     color: white;
     margin-top: 150px;    
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 .container-fluid button {
     margin-left: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 }
 
 .hero img {
-    height: 75vh;
+   
     width: 100%;
+    height: 700px;
     position: absolute;
     object-fit: cover;
     z-index: -1;
 }
 
+.hero {
+    height: 800px;
+}
+
 #navbarSupportedContent {
     margin-left: 20vw;
+}
+
+#search {
+    background-color: white;
+    border-radius: 50px;
+}
+
+#search p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#search button {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #FF385C;
+    color: white;
+}
+
+#places img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#places .col-lg-3 p:first-of-type {
+    font-weight: bold;
+}
+
+#places img:hover {
+    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.container-fluid button:hover {
+    box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
+}
+
+footer p:first-of-type {
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
 }
 
 /*----------- SEARCH BAR */
@@ -81,51 +133,6 @@ h1 {
     width: 95%;
 }
 
-/* #search {
-    background-color: white;
-    border-radius: 50px;
-}
-
-#search p {
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-#search button {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    background-color: #FF385C;
-    color: white;
-} */
-
-#places img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-#places .col-lg-3 p:first-of-type {
-    font-weight: bold;
-}
-
-#places img:hover {
-    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.8);
-    cursor: pointer;
-}
-
-.container-fluid button:hover {
-    box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
-}
-
-footer p:first-of-type {
-    font-weight: bold;
-}
-
-footer {
-    background-color: rgb(235, 235, 235);
-}
 
 
 /* ---------------MEDIA QUERY */
