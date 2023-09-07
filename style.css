@@ -104,3 +104,11 @@ footer p:first-of-type {
 footer {
     background-color: rgb(235, 235, 235);
 }
+
+footer p, span {
+    cursor: pointer;
+}
+
+footer p:hover, span:hover {
+    text-decoration: underline;
+}
