@@ -53,14 +53,17 @@ h1 {
     margin-left: 20vw;
 }
 
+/*----------- SEARCH BAR */
 #searchBar{
     background-color: black;
+    max-width: 90rem;
 }
 
 #searchBar > .row{
-        border: solid 1px white;
         border-radius: 50px;
         padding-block: 0.5rem;
+        width: 50rem;
+        background-color: white;
 }
 
 #searchBar > .row > div:nth-child(5) > button{
@@ -71,6 +74,13 @@ h1 {
         background-color: rgb(255, 56, 91);
     
 }
+
+/* tolgo spazio tra icone data */
+
+#searchBar > .row > div> input{
+    width: 95%;
+}
+
 /* #search {
     background-color: white;
     border-radius: 50px;
@@ -116,3 +126,28 @@ footer p:first-of-type {
 footer {
     background-color: rgb(235, 235, 235);
 }
+
+
+/* ---------------MEDIA QUERY */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #searchBar > .row{
+        border-radius: 50px;
+        padding-block: 0.5rem;
+        width: 20rem;
+        background-color: white;
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
