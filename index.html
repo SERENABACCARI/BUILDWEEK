@@ -110,11 +110,37 @@
       </div>
       <div class="col-3 col-md-1 d-flex align-ite-0-center justify-content-center px-0 ps-md-3">
 
-        <button type="submit" class=" border-0"><i class="bi bi-search"></i></button>
+        <button type="button" class=" border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-search"></i></button>
       </div>
 
     </form>
+
+    <!-- Modal -->
+      <div class="modal fade d-lg-none d-md-none" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="assets/logo-pink.png" alt="">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3>Where to?</h3>
+              <i class="bi bi-search"></i>
+              <input type="text" placeholder="Search destinations">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary border-0"><i class="bi bi-search"></i> Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </div>
+
+
+  
   <!---------- HERO -->
 
   <section class="hero d-flex flex-column">
