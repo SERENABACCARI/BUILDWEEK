@@ -80,6 +80,18 @@ h1 {
     color: white;
 }
 
+.modal .btn-primary {
+    background-color: #FF385C
+}
+
+.modal input {
+    border-radius: 50px;
+}
+
+.modal img {
+    height: 30px;
+}
+
 #places{
     background-color: white;
     padding-top: 30px;
