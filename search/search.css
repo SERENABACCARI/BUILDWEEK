@@ -13,28 +13,31 @@ button img {
 }
 
 .profile button:hover {
-    box-shadow: 3px 3px 3px -1px rgba(255,255,255,0.8);
+    box-shadow: 3px 3px 3px -1px rgba(255, 255, 255, 0.8);
 }
 
 
 /* CARD */
 
-.card-body > .card-text > .row > div> i{
+.card-body>.card-text>.row>div>i {
     color: #FF385B;
 }
-.card > .card-body > .card-text > .row > div:nth-child(2){
+
+.card>.card-body>.card-text>.row>div:nth-child(2) {
     flex: 0 0 1.1rem;
 
 }
-p{
+
+p {
     margin-block: 0;
     font-weight: 300;
 }
 
-.card-text > .row{
+.card-text>.row {
     font-size: 15px;
 }
-.card-text > div:nth-child(2) > div{
+
+.card-text>div:nth-child(2)>div {
     font-size: 16px;
 }
 
@@ -48,49 +51,52 @@ p{
     line-height: 16px;
     padding: 4px;
     border-radius: 40px;
-    /* font-family: Georgia, serif; */
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-    background-image: linear-gradient(rgb(212, 214, 216) 0%, rgb(250, 251, 253) 50%, rgb(249, 250, 251) 100%);
-    box-shadow: rgb(252, 251, 251) 5px 5px 15px 5px;
-    border: 1px solid rgb(172, 173, 174);
+
+    /* background-image: linear-gradient(rgb(212, 214, 216) 0%, rgb(250, 251, 253) 50%, rgb(249, 250, 251) 100%); */
+    /* border: 1px solid rgb(172, 173, 174); */
     display: inline-block;
     margin-top: 2rem;
+    transition: all 0.75s ease-in-out;
 }
 
 .myButton:hover {
-    background: #f3f4f5;
+    transition: all 0.75s ease-in-out;
+    transform: scale(1.2);
+
+
 }
 
 .myButton:active {
     background: #f9fafb;
 }
 
-
-.card{
-    border: transparent;
-    
-    
+.btn-hero{
+    font-weight: 300;
 }
 
-.imgcard{
+
+
+
+.card {
     border-radius: 10%;
     transform: scale(1);
-    transition: all .2s linear;
-    
+    transition: all .2s ease-in-out;
+
 }
 
-.imgcard:hover{
+.card:hover {
     transform: scale(1.1);
-        border: 10px solid transparent
-        
-    }
+    box-shadow: 5px 5px 24px 1px rgba(137, 137, 137, 0.85);
+    transition: all .2s ease-in-out;
 
 
-.pallino{
+}
+.imgcard{
+    border-radius: 5% ;
+}
+
+
+.pallino {
     background-color: rgb(235, 40, 79);
     border-radius: 50%;
     height: 30px;
@@ -114,7 +120,7 @@ p{
     border-radius: 30px;
     padding: 14px 0px;
     border: 1px solid #6f6c6c;
-    
+
 }
 
 
@@ -127,5 +133,3 @@ footer p:first-of-type {
 footer {
     background-color: rgb(235, 235, 235);
 }
-
-
