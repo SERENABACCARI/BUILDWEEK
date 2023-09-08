@@ -28,7 +28,7 @@ button img {
 
 }
 
-p {
+.hero p, .cards p{
     margin-block: 0;
     font-weight: 300;
 }
