@@ -81,7 +81,7 @@ p {
     border-radius: 10%;
     transform: scale(1);
     transition: all .2s ease-in-out;
-
+    cursor: pointer;
 }
 
 .card:hover {
@@ -132,4 +132,12 @@ footer p:first-of-type {
 
 footer {
     background-color: rgb(235, 235, 235);
+}
+
+footer p, span {
+    cursor: pointer;
+}
+
+footer p:hover, span:hover {
+    text-decoration: underline;
 }
