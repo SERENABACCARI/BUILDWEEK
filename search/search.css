@@ -16,7 +16,33 @@ button img {
     box-shadow: 3px 3px 3px -1px rgba(255, 255, 255, 0.8);
 }
 
+/*------ HERO */
 
+/* title and icon */
+
+.bi.bi-plus-circle-fill::before{
+    font-size: 1.8rem;
+    color: #FF385B;
+}
+
+.btn-hero{
+    border-radius: 23px;
+    font-weight: 300;
+    font-size: 12px;
+
+
+}
+
+.hero p, .cards p{
+    margin-block: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.hero a{
+    text-decoration: none;
+    color: black;
+}
 /* CARD */
 
 .card-body>.card-text>.row>div>i {
@@ -28,10 +54,7 @@ button img {
 
 }
 
-.hero p, .cards p{
-    margin-block: 0;
-    font-weight: 300;
-}
+
 
 .card-text>.row {
     font-size: 15px;
@@ -40,42 +63,6 @@ button img {
 .card-text>div:nth-child(2)>div {
     font-size: 16px;
 }
-
-
-
-
-
-.myButton {
-    color: rgb(12, 12, 12);
-    font-size: 16px;
-    line-height: 16px;
-    padding: 4px;
-    border-radius: 40px;
-
-    /* background-image: linear-gradient(rgb(212, 214, 216) 0%, rgb(250, 251, 253) 50%, rgb(249, 250, 251) 100%); */
-    /* border: 1px solid rgb(172, 173, 174); */
-    display: inline-block;
-    margin-top: 2rem;
-    transition: all 0.75s ease-in-out;
-}
-
-.myButton:hover {
-    transition: all 0.75s ease-in-out;
-    transform: scale(1.2);
-
-
-}
-
-.myButton:active {
-    background: #f9fafb;
-}
-
-.btn-hero{
-    font-weight: 300;
-}
-
-
-
 
 .card {
     border-radius: 10%;
@@ -96,32 +83,13 @@ button img {
 }
 
 
-.pallino {
-    background-color: rgb(235, 40, 79);
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    margin-top: 1rem;
-    margin-left: 1rem;
 
-}
 
-.btn-toolset {
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    color: #FFFFFF;
-    text-decoration: none;
-    line-height: 1.2;
-    font-weight: normal;
-    font-family: sans-serif;
-    font-size: 18px;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-    padding: 14px 0px;
-    border: 1px solid #6f6c6c;
 
-}
+
+
+
+
 
 
 /* FOOTER */
@@ -140,4 +108,23 @@ footer p, span {
 
 footer p:hover, span:hover {
     text-decoration: underline;
+}
+
+
+/* ----------MEDIA QUERY */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero > .row{
+        padding-inline: 0 ;
+
+    }
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .hero > .row{
+        padding-inline: 6rem ;
+
+    }
 }
