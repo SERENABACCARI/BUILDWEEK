@@ -155,7 +155,7 @@ input {
 
 /* bottone prenotazione */
 
-.card-body>.row>div:last-child>button {
+.card-body>.row>div:last-child> a > button {
     padding-inline: 6.2rem;
     padding-block: 1rem;
     border-radius: 19px;
@@ -194,7 +194,7 @@ input {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1400px) {
  /* bottone prenotazione */
- .card-body>.row>div:last-child>button {
+ .card-body>.row>div:last-child> a > button {
     padding-inline: 10.4rem;
 
 }
@@ -281,7 +281,7 @@ input {
 @media only screen and (min-width: 650px) and (max-width: 1200px) {
 
     /* bottone prenotazione */
-    .card-body>.row>div:last-child>button {
+    .card-body>.row>div:last-child> a > button {
         padding-inline: 5.5rem;
 
     }
@@ -299,7 +299,7 @@ input {
 @media only screen and (min-width:375px) and (max-width: 650px) {
 
     /* bottone prenotazione */
-    .card-body>.row>div:last-child>button {
+    .card-body>.row>div:last-child> a >button {
         padding-inline: 7rem;
 
     }
@@ -325,7 +325,7 @@ input {
 
     /* bottone prenotazione */
 
-    .card-body>.row>div:last-child>button {
+    .card-body>.row>div:last-child> a > button {
         padding-inline: 3rem;
 
     }
