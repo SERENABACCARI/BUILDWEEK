@@ -131,3 +131,15 @@ footer p:hover, span:hover {
 
     }
 }
+
+@media (min-width: 481px) and (max-width: 991px){
+    .rating-1{
+        position: absolute;
+        left: 30px;
+    }
+
+    .rating-2{
+        position: absolute;
+        left: 60px;
+    }
+}
